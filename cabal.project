@@ -1,0 +1,4 @@
+packages: ./ghc-t16211
+          ./ghc-t16234
+          ./monad-classes-minimal
+          ./primitive-minimal

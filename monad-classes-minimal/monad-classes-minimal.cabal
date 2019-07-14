@@ -1,0 +1,25 @@
+cabal-version:       >=1.10
+name:                monad-classes-minimal
+version:             0.3.2.2
+synopsis:            more flexible mtl
+-- description:
+homepage:            https://github.com/strake/monad-classes.hs
+license:             MIT
+license-file:        LICENSE
+author:              Roman Cheplyaka <roma@ro-che.info>
+maintainer:          M Farkas-Dyck <strake888@gmail.com>
+-- copyright:
+category:            Control
+build-type:          Simple
+
+library
+  exposed-modules:     Control.Monad.Classes
+  other-modules:       Control.Monad.Classes.Core
+                       Control.Monad.Classes.Effects
+                       Control.Monad.Classes.Reader
+                       Control.Monad.Classes.State
+                       Data.Peano
+  build-depends:       base >= 4.7 && < 5, transformers
+  hs-source-dirs:      .
+  default-language:    Haskell2010
+  ghc-options:         -Wall
